@@ -3,7 +3,8 @@ const { TicTacToe } = require("./games/tictactoe.ts");
 
 const server = Server({
   games: [TicTacToe],
-  origins: [Origins.LOCALHOST],
+  origins: [process.env.ORIGIN],
+  apiOrigins: [process.env.ORIGIN],
 });
 
 server.run(process.env.PORT || 8000);
