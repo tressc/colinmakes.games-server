@@ -1,0 +1,20 @@
+{
+  "name": "expr-bgio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tsx index.js",
+    "start": "npx tsx index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "boardgame.io": "^0.50.2",
+    "express": "^4.21.2",
+    "tsx": "^4.19.2"
+  }
+}
