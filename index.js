@@ -1,4 +1,4 @@
-const { Server, Origins } = require("boardgame.io/server");
+const { Server } = require("boardgame.io/server");
 const { Setto } = require("./games/setto.ts");
 
 const server = Server({
