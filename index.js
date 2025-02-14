@@ -1,10 +1,10 @@
 const { Server, Origins } = require("boardgame.io/server");
-const { TicTacToe } = require("./games/tictactoe.ts");
+const { Setto } = require("./games/setto.ts");
 
 const server = Server({
-  games: [TicTacToe],
-  origins: [process.env.ORIGIN],
-  apiOrigins: [process.env.ORIGIN],
+  games: [Setto],
+  origins: [process.env.ORIGIN || "http://localhost:3000"],
+  apiOrigins: [process.env.ORIGIN || "http://localhost:3000"],
 });
 
 server.run(process.env.PORT || 8000);

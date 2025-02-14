@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tsx index.js",
+    "dev": "NODE_ENV=development npx tsx index.js",
     "start": "npx tsx index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
